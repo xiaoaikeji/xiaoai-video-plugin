@@ -1,0 +1,4 @@
+interface:
+  display_name: "小艾视频播放插件集成"
+  short_description: "为微信小程序生成小艾视频播放插件的接入、控制与问题排查方案"
+  default_prompt: "使用 $xiaoai-video-plugin-skill 为我的微信小程序集成小艾视频播放插件。"

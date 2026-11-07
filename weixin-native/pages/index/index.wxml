@@ -1,0 +1,59 @@
+<view class="content">
+	<view class="video-wrap">
+		<m-video
+			id="mVideo"
+			style="display:block;width:100%;height:100%;"
+			token="input-your-token-替换成你的token"
+			speedRate="{{speedRate}}"
+			src="{{videoUrl}}"
+			poster="https://sucaicdn.xiaoaikeji.net/images/demo.jpg"
+			showSpeedRateBtn="{{true}}"
+			muted="{{false}}"
+			show-casting-button="{{true}}"
+			enable-auto-rotation="{{true}}"
+			show-screen-lock-button="{{true}}"
+			show-background-playback-button="{{true}}"
+			controls="{{controls}}"
+			enable-progress-gesture="{{false}}"
+			preferred-peak-bit-rate="{{-1}}"
+			showCustomCenterPlayBtn="{{true}}"
+			loop="{{true}}"
+			bindplay="onPlay"
+			bindended="onEnd"
+			bindloadedmetadata="loadedmetadata"
+			bindtap="onClick"
+			bindcontrolstoggle="controlstoggle"
+			debug="{{true}}"
+		/>
+	</view>
+
+	<view class="action-wrap">
+		<view class="flex-row">
+			<view class="flex-1">
+				<button bindtap="playVideo">播放</button>
+			</view>
+			<view class="flex-1">
+				<button bindtap="pauseVideo">停止</button>
+			</view>
+		</view>
+		<view class="flex-row">
+			<view class="flex-1">
+				<button bindtap="playbackRate2">加速播放(2倍速)</button>
+			</view>
+			<view class="flex-1">
+				<button bindtap="resetRate">恢复速度</button>
+			</view>
+		</view>
+		<view class="flex-row">
+			<view class="flex-1">
+				<button bindtap="showcontrols">显示控制栏</button>
+			</view>
+			<view class="flex-1">
+				<button bindtap="hidecontrols">隐藏控制栏</button>
+			</view>
+		</view>
+		<view>
+			{{tip}}
+		</view>
+	</view>
+</view>

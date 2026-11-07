@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "小艾视频播放插件示例"
+  },
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "m-video": {
+      "version" : "latest",
+      "provider": "wxd4709e80d42cb833"
+    }
+  }
+}

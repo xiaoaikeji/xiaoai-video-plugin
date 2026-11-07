@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "m-video": "plugin://m-video/m-video"
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "小艾视频播放插件示例"
+			}
+		},
+		{
+			"path": "pages/index/detail",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/index/ts_test",
+			"style": {
+				"navigationBarTitleText": "TypeScripe测试"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+				"navigationStyle": "custom",
+		"mp-weixin": {
+			"usingComponents": {
+				"m-video": "plugin://m-video/m-video"
+			}
+		}
+	},
+	"uniIdRouter": {}
+}
